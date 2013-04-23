@@ -1,0 +1,137 @@
+div.udf_meta_settingItem {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	display: inline-block;
+	width: 100%;
+	background-color: #DDD;
+	margin: 5px 0 10px 0;
+}
+
+div.udf_meta_settingItem ul {
+	margin-top: 5px;
+}
+
+div.udf_meta_settingItem ul li {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	background-color: #EEEEEE;
+	float: left;
+	list-style: none;
+	width: 235px;
+	margin-left: 5px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+div.udf_meta_settingItem ul li div.selectThumbnail{
+	border: 1px solid #CCC;
+	/* border-radius: 5px; */
+	background-color: #EEEEEE;
+	width: 232px;
+	height: 217px;
+	margin-top: 5px;
+	overflow: hidden;
+	/* padding: 5px; */
+	line-height: 0px;
+	background-image:url(../images/ajax-loader.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+	position: relative;
+}
+
+div.udf_meta_settingItem ul li div.selectThumbnail img {
+	position: relative;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div.udf_meta_settingItem tr.wpadminmeta_odd_row {
+	background-color: #CCCCCC;
+}
+
+div.udf_meta_settingItem ul li textarea {
+	width: 235px;
+	height: 180px;
+}
+
+div.udf_meta_settingItem ul li textarea[name="page_subheading_text"] {
+	width: 99%;
+	height: 140px;
+}
+
+div.udf_meta_settingItem table textarea {
+	width: 300px;
+	height: 100px;
+}
+
+div.udf_meta_settingItem tr#adBannerImageSelect div.selectThumbnail {
+	width: 315px;
+	height: 42px;
+	border: 1px solid #CCC;
+}
+
+div.udf_meta_settingItem tr.customBackgroundImageSelect div.selectThumbnail {
+	width: 320px;
+	height: 200px;
+	border: 1px solid #CCC;
+}
+
+div.udf_meta_settingItem tr.headerImageSelect div.selectThumbnail {
+	width: 300px;
+	height: 143px;
+	border: 1px solid #CCC;
+}
+
+div.udf_meta_settingItem tr.teaserImageSelect div.selectThumbnail {
+	width: 207px;
+	height: 100px;
+	border: 1px solid #CCC;
+}
+
+.udf_meta_ajaxLoaderAnimation {
+	background-image:url(../images/ajax-loader.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+
+div.udf_meta_settingItem table {
+	width: 98%;
+	text-align: left;
+	margin: 5px;
+	padding: 3px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	background-color: #EEEEEE;
+}
+
+div#sort-buttons a#clear {
+	display: none;
+}
+
+tr.media_id,tr.media_flowplayer, tr.media_image_clickable {
+	display: none;
+}
+
+div.udf_meta_settingItem div#customBackgroundImage_solidColor_sample {
+	background: none;
+	width: 25px;
+	height: 24px;
+	margin-top: 1px;
+	margin-right: 5px;
+}
+
+div.udf_meta_settingItem .colorSelect {
+	border-right: 1px solid #D3CFB9;
+}
+
+div.udf_meta_settingItem .colorSelect_focus {
+	border-right:1px solid #fe5a00;
+}
+
+.media-modal a.del-link.button {display: none;}
+
+#toTop{width:60px;height:60px; position:fixed; left:0px; bottom:0px; cursor:pointer; display:none;z-index: 1000;-webkit-tap-highlight-color: rgba(0,0,0,0); }
+#toTop{background:url(../images/icons/to_top_corner.png) 0 0 no-repeat;}
+#toTop:hover {background-position: 0 -60px;}

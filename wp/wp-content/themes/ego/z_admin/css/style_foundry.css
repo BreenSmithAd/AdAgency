@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+/*------------------------------------------------------
+
+	Admin Name: FOUNDRY THEME OPTIONS PANEL - version 1.0
+	Type: Layout css
+	Author: unlimitDesign
+	Author URI: http://themeforest.net/user/udfrance
+	Description: Theme options panel for WP 3.3 +
+	Copyright UnlimitDesign 2012
+	Tags: WPML
+
+/*------------------------------------------------------
+
+	CSS TOB: 
+
+	1. Resets
+	2. General Margins
+	3. Structural Elements/Skeleton
+		i.gobal wrapper
+		ii.sidebar
+		iii.header
+		iv.content
+		v.modules
+	4. Menu
+	5. Links
+	6. Typography
+	7. Standard Elements
+	8. Misellaneous
+		
+---------------------------------------------------------*/
+
+/*--------------------------------------------------------
+	1. RESETS - FP PANEL SPECIFIC 
+--------------------------------------------------------*/
+
+	#navContainer, #nav, #nav li, #fp-wrapper h1,#fp-wrapper h2, #fp-wrapper h3, #fp-wrapper h4, #fp-wrapper h5, #fp-wrapper h6, #fp-wrapper p {margin: 0;border: 0;vertical-align: baseline;}
+
+/*--------------------------------------------------------
+	2.GENERAL MARGIN SETUP
+--------------------------------------------------------*/
+
+	#fp-wrapper, #navContainer, .video_frame, #fp-wrapper h1,#fp-wrapper h2, #fp-wrapper h3, #fp-wrapper h4, #fp-wrapper h5, #fp-wrapper h6, #fp-wrapper p {margin-bottom: 30px;}
+	
+/*--------------------------------------------------------
+	3.STRUCTURAL ELEMENTS/SKELETON
+--------------------------------------------------------*/
+
+	/*----------------------------
+	i.-- global wrapper
+	-----------------------------*/
+	
+	#fp-wrapper{width:790px;min-height:600px;position:relative;overflow:hidden; margin-top:18px;}
+	
+	/*----------------------------
+	ii.-- sidebar 
+	-----------------------------*/
+	
+	#sidebar{width:180px;height:100%;position:absolute;overflow:hidden;}
+	#sidebar #inner{width:180px;height:100%;position:absolute;}
+	
+		/* logo area
+		----------------------------------*/
+		#sidebar #logo{width:180px;height:220px;}
+		#sidebar #logo-texture, #sidebar #logo-overlay{width:180px;height:220px;}
+		
+		/* version control
+		----------------------------------*/
+		
+		#sidebar #v-control{width:180px; height:25px;}
+		
+		/* section menu
+		----------------------------------*/
+		
+		#navContainer{width:180px; height:auto; overflow:hidden; z-index:100; position:relative;}		
+		.foundry_icon{background-postition:0 0;width:20px;height:20px;margin:10px 10px 0 0; float:left;}
+		#nav{height:auto; list-style:none; margin-bottom:0px;position:relative;}
+		#nav li{ width:100%;height:40px;display:block;position:relative;}
+		#nav li a img{float:left;margin:10px 8px 0 0;}
+		#nav li a{width:140px;height:40px;display:block;background:none;padding:0 20px;}
+		#nav li a:hover{text-decoration:none;}
+		#nav li a.first, #nav li a.last{height:41px;}
+	
+	
+	
+	/*----------------------------
+	iii.-- header 
+	-----------------------------*/
+	
+	#header{width:610px;position:relative;left:180px; overflow:hidden;}
+	#header #header-inner{width:530px;min-height:155px;padding:40px 40px 25px 40px;overflow:auto;}
+	
+	
+		/* dashboard icons
+		----------------------------------*/
+		
+		#dashboard-icons{width:481px;height:26px;margin-bottom:26px; padding:0 25px;} 
+		#dashboard-icons .link_holder{width:auto; height:26px;padding-right:12px;}
+		#dashboard-icons .link_holder a{float:left;font-family: Arial, Helvetica, sans-serif;font-size:11px;line-height:26px;}
+		#dashboard-icons .link_holder a:hover{text-decoration:underline;}
+		#dashboard-icons .link_holder.alignRight{float:right; margin-left:12px;}
+		#dashboard-icons .link_holder.alignLeft{float:left; margin-right:12px;}
+		
+		
+		/* message screen
+		----------------------------------*/
+		
+		#dashboard-message{width:530px; height:auto; overflow:hidden;}
+		#dashboard-message p{margin-bottom:26px !important;}
+
+	
+	
+	/*----------------------------
+	vi.-- content 
+	-----------------------------*/
+	
+	#content-wrapper{width:610px;left:180px;position:relative; padding:0 0 30px 0;} 
+	.content{width:610px;height:auto;}
+	/*allows to variate positioning of tabs and normal content*/
+	/*.content.untabbed{width: 540px; padding: 40px 35px;} */
+	.content.tabbed{padding-top:0px;}
+	
+	
+		/* tab layout
+		----------------------------------*/
+		/*ref jquery-ui-1.8.16.custom*/
+		
+		.ui-tabs .ui-tabs-nav {height: 28px;margin: 0;padding: 0 35px;}
+		.ui-tabs .ui-tabs-panel {padding:0;}
+		
+		
+	/*----------------------------
+	vii.-- modules 
+	-----------------------------*/
+	
+		#fp-wrapper .module{width:540px; padding:30px 35px;}
+		#fp-wrapper .module .module{width:540px; padding:30px 0px;}
+		#fp-wrapper .module .module:last-child{padding-bottom:0px;margin-bottom:0px;}
+		
+		
+			/* fields
+			----------------------------------*/
+	
+			#fp-wrapper input[type="text"].module-inputField{height:35px;padding:0 10px;outline:none;vertical-align: bottom;line-height:35px; margin:0px;}
+			#fp-wrapper input[type="text"].module-inputField.single{width:496px;}
+			#fp-wrapper input[type="text"].module-inputField.standard{width:418px;}
+			#fp-wrapper input[type="text"].module-inputField.hexVal{width:377px;}
+			
+			
+			/* txt areas
+			----------------------------------*/
+			
+			#fp-wrapper textarea.module-txtArea{min-width:100%;max-width:540px;height:200px;padding:10px;outline:none;display: block;}
+			#fp-wrapper .settingItemMessage{width:400px;}
+			#fp-wrapper .settingOption_textarea input[type="submit"]{margin-top:10px;}
+			
+			
+			
+			/* select
+			----------------------------------*/
+			
+			#fp-wrapper select.singleCombo{width:498px;}
+			#fp-wrapper select{width:416px;height:35px;padding:8px 10px;outline:none;vertical-align: bottom; margin-top:-.3px;/*alignment fix*/}
+			
+			
+			/* radio buttons
+			----------------------------------*/
+			
+			/*#fp-wrapper .module-radioButton{}*/
+			
+			
+			/* buttons
+			----------------------------------*/
+		
+			#fp-wrapper input[type="submit"], #fp-wrapper input[type="button"]{display: inline-block;height:35px;position: relative;cursor: pointer; margin:0px;}
+			#fp-wrapper input[type="submit"]:active, #fp-wrapper input[type="button"]:active{top: 1px;}
+			#fp-wrapper input[type="submit"]:-moz-focus-inner, #fp-wrapper input[type="button"]:-moz-focus-inner { border: 0; padding: 0; margin:0; } /*ff inner spacing correction*/
+		
+			/* button sizes */
+			#fp-wrapper input[type="submit"].small,#fp-wrapper input[type="button"].small {width:58px;font-size: 11px;padding: 0px 10px;line-height:36px;}
+			#fp-wrapper input[type="submit"].large,#fp-wrapper input[type="button"].large {width:65px;font-size: 14px;padding: 0px 15px;line-height:36px;}
+			
+			/*button alignment*/
+			#fp-wrapper input[type="submit"].alignLeft, #fp-wrapper input[type="button"].alignLeft{float:left;}
+			#fp-wrapper input[type="submit"].alignRight, #fp-wrapper input[type="button"].alignRight{float:right; margin-right:3px;}
+			#fp-wrapper input[type="submit"].last, #fp-wrapper input[type="button"].last{margin-right:0px;}
+			
+			/*button states*/
+			#fp-wrapper input[type="submit"].saveProgress:active, #fp-wrapper input[type="submit"].saveSuccess:active, #fp-wrapper input[type="submit"].saveError:active,#fp-wrapper input[type="submit"].saveDisabled:active,#fp-wrapper input[type="button"].saveProgress:active, #fp-wrapper input[type="button"].saveSuccess:active, #fp-wrapper input[type="button"].saveError:active,#fp-wrapper input[type="button"].saveDisabled:active{top:0;}
+			#fp-wrapper input[type="submit"].saveProgress, #fp-wrapper input[type="submit"].saveSuccess, #fp-wrapper input[type="submit"].saveError,  #fp-wrapper input[type="submit"].saveDisabled{cursor:auto;}
+			#fp-wrapper input[type="submit"].large.saveProgress, #fp-wrapper input[type="submit"].large.saveSuccess, #fp-wrapper input[type="submit"].large.saveError,#fp-wrapper input[type="button"].large.saveProgress, #fp-wrapper input[type="button"].large.saveSuccess, #fp-wrapper input[type="button"].large.saveError  {padding-left:40px !important;}
+			
+			#fp-wrapper input[type="button"].thisIsInitSectionButton{width:auto;margin-right:3px;}
+			#fp-wrapper input[type="button"].thisIsSaveSectionButton{width:auto;margin: 0 3px 0 30px;}
+			
+			/*success*/
+			#fp-wrapper input[type="submit"].small.saveSuccess,#fp-wrapper input[type="button"].small.saveSuccess{padding-left:30px !important;}
+			
+			/*error*/
+			#fp-wrapper input[type="submit"].small.saveError,#fp-wrapper input[type="button"].small.saveSuccess{padding-left:30px !important;}
+	
+			/*button colors*/
+			/*ref to style_theme.css*/
+			
+			/*button effects*/
+			/*ref to style_theme.css*/
+			
+			
+			/*toggle buttons
+			----------------------------------*/
+			
+			.toggleCheckContainer {-webkit-transform:translate3d(0,0,0);position: relative;height: 33px;cursor: pointer;overflow: hidden;}
+			.toggleCheckContainer input { position: absolute;top: 5px;left: 30px;}
+			.toggleCheckContainer label {white-space: nowrap;display: block;height: 33px;position: absolute;width: 50px;top: 0;padding-top: 5px;overflow: hidden; }
+			.toggleCheckContainer, .toggleCheckContainer label {user-select: none;-moz-user-select: none;-khtml-user-select: none; }
+			/*.toggleCheckDisabled {}*/
+			label.toggleCheckLabelOn {left: 0;padding-top: 5px; }
+			label.toggleCheckLabelOn span {padding-left: 19px; }
+			label.toggleCheckLabelOff {right: 0; }
+		    label.toggleCheckLabelOff span {padding-right: 16px; }
+			.toggleCheckHandle {display: block;height: 33px;cursor: pointer;position: absolute;top: 0;left: 0;width: 0;padding-left: 3px; }
+			.toggleCheckHandleRight {height: 100%;width: 100%;padding-right: 3px;}
+			.toggleCheckHandleCenter {height: 100%;width: 100%; width:50px !important; }
+			
+		
+			/* help message
+			----------------------------------*/
+			
+			#fp-wrapper .settingItemMessage{margin-top:10px;}
+			
+			
+			/* progress message
+			----------------------------------*/
+			
+			#fp-wrapper .progressMessage{padding:30px 35px;margin-bottom:0px;}
+			
+			/* tooltip
+			----------------------------------*/
+			.titleContainer{overflow:hidden;}
+			.titleContainer h1{float:left;}
+			.info{float:left;width:15px;height:15px;margin:0 5px 0 5px;}
+			/*.info:hover{} - ref style_theme.css*/
+			.tooltip{max-width:200px; display:none; position:absolute;z-index:101;padding:15px; overflow:hidden;}
+			
+			
+			/* breadcrum
+			----------------------------------*/
+			
+			.breadcrum-container{height:20px;padding-top:30px; margin-top:30px;}
+			.crum{height:20px;margin-right:5px; cursor:pointer;}
+			.crum .path{height:20px;padding:0 10px;float:left;}
+			.crum .tip{width:7px;height:20px;float:left;}
+			
+			/*to top
+			----------------------------------*/
+			
+			#toTop{width:30px;height:31px; position:fixed; right:20px; bottom:95px; cursor:pointer; display:none;z-index: 1000;}
+
+
+/*--------------------------------------------------------
+	5.LINKS
+--------------------------------------------------------*/
+
+	#fp-wrapper a.link, #fp-wrapper a.db_icons, #fp-wrapper a.more{outline:none; border:none;}
+	#fp-wrapper a.foundry_systemInfo_click{margin:20px 0;padding:5px 10px;}
+
+
+/*--------------------------------------------------------
+	6.TYPOGRAPHY
+--------------------------------------------------------*/
+
+	/*ref style_theme.css*/
+
+/*--------------------------------------------------------
+	7. STANDARD ELEMENTS
+--------------------------------------------------------*/
+
+		
+	/*----------------------------
+	i.-- video
+	-----------------------------*/
+	
+	.video_frame{}
+		
+		
+    /*----------------------------
+	ii.-- highlights
+	-----------------------------*/
+	
+	.highlight{padding:2px 5px;}
+	.underline{padding:0px;}
+	
+
+
+/*--------------------------------------------------------
+	8. MISCELLANEOUS
+--------------------------------------------------------*/	
+
+  .clear{clear:both;}
+  .clearLeft{clear:left;}
+  .clearRight{clear:right;}
+  .hide{display:none;}
+  .show{display:block;}
+

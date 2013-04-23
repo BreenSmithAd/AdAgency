@@ -1,0 +1,102 @@
+/* 
+	pending CSS 
+*/
+
+/* for admin ui upload setting Item */
+
+.upload_thumbnail {
+	/* border: 1px solid #D3CFB9; */
+	/*
+background-image:url(../images/ajax-loader.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+*/
+	width: 100px;
+	height: 100px;
+	padding: 5px 5px;
+	outline: none;
+	vertical-align: bottom;
+	/* line-height: 35px; */
+	margin: 0;
+	margin-right: 15px;
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+#fp-wrapper .module .module {background:#fff;}
+
+#fp-wrapper .module.group {background:url(../images/patterns/module_pattern_overlay.png);}
+
+.upload_thumbnail_message {
+	width: 400px;
+	height: 100px;
+	padding: 0px 0 10px 0;
+	position: relative;
+	white-space: normal;
+}
+
+#fp-wrapper .module-txtArea {
+	margin-bottom: 10px;
+}
+
+#fp-wrapper .settingOption_textarea {
+	margin-bottom: 45px;
+}
+
+#fp-wrapper input.module-inputField {
+	line-height: normal;
+}
+
+#fp-wrapper input.ui-button.revertDisabled { background: #ECEADD url(../images/patterns/module_pattern_overlay.png)repeat; color: #AA9E80 !important;}
+
+#fp-wrapper input.ui-button.revertDisabled:hover {background-color: #eceadd;color:#aa9e80 !important;}
+
+#fp-wrapper input.module-inputField.input_number, 
+#fp-wrapper input.module-inputField.colorpickerField,
+#fp-wrapper input.module-inputField.input_url,
+#fp-wrapper input.module-inputField.input_email {
+	ime-mode: disabled;
+}
+
+#fp-wrapper div.settingItemMessage {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #EA5706;
+	display: none;
+}
+
+#fp-wrapper div.settingItemMessage {
+	margin-top: 10px;
+	color: #6F6345;
+	font-style:italic;
+	display: none;
+}
+
+#fp-wrapper div.settingItemMessage.settingItemErrorMessage {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #EA5706;
+	font-style:italic;
+}
+
+#fp-wrapper div.settingItemMessage_section {
+	margin-top: 10px;
+	color: #EA5706;
+	font-style:italic;
+}
+
+#fp-wrapper form select {
+	width:365px;height:35px;padding:8px 10px;outline:none;vertical-align: bottom;
+	background:#fff;font-size:12px;border:1px solid #d3cfb9;color: #8c8668; line-height:33px;
+}
+
+#fp-wrapper form select:focus{border:1px solid #fe5a00;color:#6f6345;}
+
+#fp-wrapper div.module.group div.module h1 {
+	font-size:18px;
+}
+
+div#wpbody #fp-wrapper .module-txtArea {
+	width: 100%;
+}

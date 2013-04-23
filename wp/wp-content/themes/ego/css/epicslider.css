@@ -1,0 +1,311 @@
+	/*
+	Skin Name: base
+	Description: base skin for the Epic Slider.
+	Version: 1.0
+	Author: unlimitDesign
+	*/
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+	*/
+	
+	
+	/*html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; }
+	
+	body{background:#000;font:12px/14px Arial, Helvetica, sans-serif;}*/
+
+
+	/*Wrapper
+	-------------------*/
+	
+	.epicSlider.slider-wrapper{width:100%;height:100%;position:absolute;overflow:hidden;top:0px;left:0px; background: url(../images/ui_epicslider/loader.gif) center center no-repeat;margin-bottom:30px;}
+	.epicSlider p:last-child { margin-bottom:0; }
+	
+
+	/*Overlay
+	-------------------*/
+	
+	.epicSlider.theme-default #epic-overlay{position:absolute;width:100%;height:100%;background:transparent url(../images/ui_epicslider/pattern.png) repeat top left;z-index:2;}
+	
+
+	/*Slides
+	-------------------*/
+	
+	.epicSlider.theme-default #slides img{position:absolute;top:0px;left:0px;width:100%;display:none;max-width:none;/* -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges;*/}
+
+
+	/*Navigation
+	-------------------*/
+	
+	.epicSlider.theme-default #epic-navigation{position:absolute;z-index:5;bottom:50px;right:65px;width:84px;height:40px;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;} /*sum of all three buttons*/
+	.epicSlider.theme-default #epic-navigation .nav-button{background-color:#000;/*fallback for iE8*/background:rgba(0,0,0,1);width:40px;height:40px;float:left;cursor:pointer;margin-right:2px;}
+	.epicSlider.theme-default #epic-navigation .nav-button.nav-last{margin-right:0;}/*:last-child{margin-right:0;}-if i8 isn't supported*/
+	.epicSlider.theme-default #epic-navigation .nav-button.disabled{opacity:0.5}
+	.epicSlider.theme-default #epic-navigation .nav-button #play{position:absolute;background:url(../images/ui_epicslider/pause-play-theme-default.png) center 0 no-repeat;width:40px;height:40px;float:left;cursor:pointer;margin-right:5px;}
+	.epicSlider.theme-default #epic-navigation .nav-button #play.active{background:url(../images/ui_epicslider/pause-play-theme-default.png) center -40px no-repeat;}
+	.epicSlider.theme-default #epic-navigation .nav-button #progress{background-color:#ff005a;/*fallback for iE8*/bottom:0;position:absolute;height:40px;background: rgba(255,0,90,1);}
+	.epicSlider.theme-default #epic-navigation .nav-button #progress.reset{width:0px !important;}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.left{background:url(../images/ui_epicslider/nav-theme-default.png) center 0 no-repeat;width:40px;height:40px;float:left;margin-right:5px;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next.right{background:url(../images/ui_epicslider/nav-theme-default.png) center -40px no-repeat;width:40px;height:40px;float:left;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.down{background:url(../images/ui_epicslider/nav-theme-default.png) center -120px no-repeat;width:40px;height:40px;float:left;margin-right:5px;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next.up{background:url(../images/ui_epicslider/nav-theme-default.png) center -80px no-repeat;width:40px;height:40px;float:left;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next:hover,.epicSlider.theme-default #epic-navigation .nav-button #prev:hover{background-color:#ff005a;/*fallback for iE8*/background-color:rgba(255,0,90,1);}
+	/*.epicSlider.theme-default #epic-navigation #play:hover{background:rgba(0,0,0,1) url(../ui/pause-play-theme-default.png) center 0 no-repeat;}*/
+		
+		
+	/*Graphics or custom
+	 js elements
+	-------------------*/
+	
+	.epic-logo,.epic-graphic{z-index:3;display:none;position:fixed;}
+	.epic-graphic{background:none !important;width:100%;height:100%;}
+	.epic-graphic img{max-width:100%;margin:auto;}
+	
+
+	/*Caption positions
+	-------------------*/
+	
+	.epic-caption{z-index:3;display:none;position:absolute; font-family:Open Sans;}
+	
+	/*position:left*/
+	.epic-caption.topLeft{top:75px;left:65px; text-align:left; float:left;}
+	.epic-caption.bottomLeft{bottom:100px;left:65px; text-align:left; float:left;}	
+	
+	/*position:right*/
+	.epic-caption.topRight{top:75px;right:65px; left:auto; text-align:right; float:right;}
+	.epic-caption.bottomRight{bottom:100px;right:65px; left:auto; text-align:right; float:right;}	
+	
+	/*vh-align classes*/
+	.epic-table{width:100%;height:100%;display:table;}
+	.epic-table-cell{width:100%;display:table-cell; vertical-align:middle; text-align:center;}
+	
+	
+	/*Captions
+	-------------------*/
+	
+	/*1. caption type: boxed background*/
+	.epic-caption-boxed{padding:20px; font-family:Arial, Helvetica, sans-serif;line-height:16px;}
+	
+		/*sizes*/
+		.epic-caption-boxed h1, .epic-caption-boxed h1 span{font-size:45px;line-height:45px;}
+		.epic-caption-boxed h2, .epic-caption-boxed h2 span{font-size:40px;line-height:40px;}
+		.epic-caption-boxed h3, .epic-caption-boxed h3 span{font-size:35px;line-height:35px;}
+		.epic-caption-boxed h4, .epic-caption-boxed h4 span{font-size:30px;line-height:30px;}
+		.epic-caption-boxed h5, .epic-caption-boxed h5 span{font-size:25px;line-height:25px;}
+		.epic-caption-boxed h6, .epic-caption-boxed h6 span{font-size:20px;line-height:20px;}
+		.epic-caption-boxed p{margin:0;}
+		.epic-caption-boxed h1, .epic-caption-boxed h2, .epic-caption-boxed h3, .epic-caption-boxed h4, .epic-caption-boxed h5, .epic-caption-boxed h6 {
+			text-transform:uppercase;
+		}
+		
+		/*font font_variation*/
+		.epic-caption-boxed span.font_variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*colors*/
+		.epic-caption-boxed{background:#000;background:rgba(0,0,0,0.8);color:#fff;}
+		.epic-caption-boxed p{color:#fff;}
+		
+		
+	/*2. caption type: elegant*/
+	.epic-caption-boxed{font-family:Arial, Helvetica, sans-serif;line-height:16px;}
+
+		/*sizes*/
+		.epic-caption-elegant h1, .epic-caption-elegant h1 span{font-size:45px;line-height:45px;}
+		.epic-caption-elegant h2, .epic-caption-elegant h2 span{font-size:40px;line-height:40px;}
+		.epic-caption-elegant h3, .epic-caption-elegant h3 span{font-size:35px;line-height:35px;}
+		.epic-caption-elegant h4, .epic-caption-elegant h4 span{font-size:30px;line-height:30px;}
+		.epic-caption-elegant h5, .epic-caption-elegant h5 span{font-size:25px;line-height:25px;}
+		.epic-caption-elegant h6, .epic-caption-elegant h6 span{font-size:20px;line-height:20px;}
+		.epic-caption-elegant p{margin:0;}
+		.epic-caption-elegant h1,.epic-caption-elegant h2,.epic-caption-elegant h3,.epic-caption-elegant h4,.epic-caption-elegant h5,.epic-caption-elegant h6{border-bottom:1px solid;padding-bottom:15px;margin-bottom:15px; text-transform:uppercase;}
+		
+		/*font variation*/
+		.epic-caption-elegant span.font_variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*colors*/
+		.epic-caption-elegant{color:#fff;}
+		.epic-caption-elegant p{color:#fff;}
+		.epic-caption-elegant h1,.epic-caption-elegant h2,.epic-caption-elegant h3,.epic-caption-elegant h4,.epic-caption-elegant h5,.epic-caption-elegant h6{color:#fff;}
+			
+		
+	
+	/*3. caption type: striped  */
+	/*.epic-caption-striped{}*/
+	.epic-caption-striped span{padding: 15px 20px 13px; font-family:inherit;float:inherit; font-weight:inherit;margin-bottom:3px; text-transform:uppercase;}
+	
+		/*sizes*/
+		.epic-caption-striped span.size_1{font-size:100px;line-height:90px; }
+		.epic-caption-striped span.size_2{font-size:80px;line-height:70px;}
+		.epic-caption-striped span.size_3{font-size:60px;line-height:50px;}
+		.epic-caption-striped span.size_4{font-size:50px;line-height:40px;}
+		.epic-caption-striped span.size_5{font-size:40px;line-height:30px;}
+		.epic-caption-striped span.size_6{font-size:30px;line-height:20px;}
+
+		/*font variation*/
+		.epic-caption-striped span.font_variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*colors*/
+		.epic-caption-striped span{background:#000; background:rgb(0,0,0);color:#fff;}
+
+		/*positioning*/
+		.epic-caption-striped.topLeft span,.epic-caption-striped.bottomLeft span{display:inline-block;}
+		.epic-caption-striped.topRight span,.epic-caption-striped.bottomRight span{display:inline-block;}
+		
+		/*link*/
+		.epic-caption-striped a {position:relative; color:#999;}
+		.epic-caption-striped a:hover span {background:#ff005a; color:#fff;}
+	
+	
+	/*4. caption type: impact  */
+	.epic-caption-impact{width:100%;height:100%;}
+	.epic-caption-impact span{text-transform:uppercase;}
+	
+		/*sizes*/
+		.epic-caption-impact span.size_1{font-size:100px;line-height:75px;}
+		.epic-caption-impact span.size_2{font-size:80px;line-height:64px;}
+		.epic-caption-impact span.size_3{font-size:70px;line-height:52px;}
+		.epic-caption-impact span.size_4{font-size:60px;line-height:47px;}
+		.epic-caption-impact span.size_5{font-size:50px;line-height:38px;}
+		.epic-caption-impact span.size_6{font-size:40px;line-height:34px;}
+		
+		/*font variation*/
+		.epic-caption-impact span.font_variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*colors*/
+		.epic-caption-impact span{color:#fff;}
+		
+		/*link*/
+		.epic-caption-impact a, .epic-caption-impact a span{color:#fff;}
+		.epic-caption-impact a:hover, .epic-caption-impact a span:hover{color:#ff005a;}
+
+
+
+	/*Media Queries
+	-------------------*/
+	
+
+	@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	
+	
+		/*epic
+		-----------------------------*/
+		
+		/*positions*/
+		#epic-navigation,.epic-logo,.epic-graphic,.epic-caption{position:absolute !important;}
+	
+	}
+	
+	
+	
+	/*Mobile Layout: Landscape Container width:768px
+	
+	-----------------------------------------------*/
+	
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	
+		/*epic
+		-----------------------------*/
+		
+		/*positions*/
+		#epic-navigation,.epic-logo,.epic-graphic,.epic-caption{position:absolute !important;}
+		
+		/*graphic*/
+		.epic-logo{background-attachment: inherit;}
+		.epic-graphic img{max-width:450px;height:auto;}
+		
+		/*captions*/
+		/*caption type: striped  */
+		/*sizes*/
+		.epic-caption-striped span.size_1{font-size:70px;line-height:60px; }
+		.epic-caption-striped span.size_2{font-size:60px;line-height:50px;}
+		.epic-caption-striped span.size_3{font-size:50px;line-height:40px;}
+		.epic-caption-striped span.size_4{font-size:40px;line-height:30px;}
+		.epic-caption-striped span.size_5{font-size:30px;line-height:20px;}
+		.epic-caption-striped span.size_6{font-size:20px;line-height:10px;}
+
+		/*caption type: impact  */
+		/*sizes*/
+		.epic-caption-impact span.size_1{font-size:70px;line-height:52px;}
+		.epic-caption-impact span.size_2{font-size:60px;line-height:50px;}
+		.epic-caption-impact span.size_3{font-size:50px;line-height:42px;}
+		.epic-caption-impact span.size_4{font-size:40px;line-height:35px;}
+		.epic-caption-impact span.size_5{font-size:30px;line-height:22px;}
+		.epic-caption-impact span.size_6{font-size:20px;line-height:20px;}
+	
+	}
+	
+	
+	/*Mobile Layout: Landscape Container width:480px
+	
+	-----------------------------------------------*/
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+		/*epic
+		-----------------------------*/
+		
+		/*positions*/
+		#epic-navigation,.epic-logo,.epic-graphic,.epic-caption{position:absolute !important;}
+		
+		/*nav*/
+		.epicSlider.theme-default #epic-navigation{bottom:10px;left:50%;margin-left:-41px; width:84px;height:40px;}
+		.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
+		
+		/*graphic*/
+		.epic-logo{width:180px;height:180px;margin:-90px 0 0 -90px;background-attachment:inherit;}
+		.epic-graphic img{max-width:180px;height:auto;}
+		
+		/*captions*/
+		.epic-caption span.size_1,.epic-caption span.size_2,.epic-caption span.size_3,.epic-caption span.size_4,.epic-caption span.size_5,.epic-caption span.size_6,
+		.epic-caption h1,.epic-caption h2,.epic-caption h3,.epic-caption h4,.epic-caption h5,.epic-caption h6,
+		.epic-caption h1 span,.epic-caption h2 span,.epic-caption h3 span,.epic-caption h4 span,.epic-caption h5 span,.epic-caption h6 span {font-size:17px; line-height:17px;border:none;}
+		.epic-caption span, .epic-caption div, .epic-caption a span{background:none !important;color:#fff !important;width:100% !important;padding:0;margin:0; border:none !important;}
+		.epic-caption a, .epic-caption a:hover{font-size: inherit;background:none !important;color:#fff !important;}
+		.epic-caption.topLeft,.epic-caption.topRight,.epic-caption.bottomLeft,.epic-caption.bottomRight{top:auto;left:auto;bottom:60px;right:auto; text-align:center; float:none;}
+		.epic-caption{position:absolute;overflow:hidden;background:#000;/*ie8 fallback*/background:rgba(0,0,0,0.8); bottom:60px; padding:20px 0 !important; height:auto;width:100% !important;border:none !important;}
+		
+		/*for graphic content only - theme specific*/
+		.epic-caption.epic-logo{background:none !important;}
+
+	
+	}
+	
+	/*Mobile Layout: Portrait Container width:320px
+	
+	-----------------------------------------------*/
+	
+	@media only screen and (max-width: 479px){
+	
+		/*epic
+		-----------------------------*/
+		
+		/*positions*/
+		#epic-navigation,.epic-logo,.epic-graphic,.epic-caption{position:absolute !important;}
+		
+		/*nav*/
+		.epicSlider.theme-default #epic-navigation{bottom:10px;left:50%;margin-left:-41px; width:84px;height:40px;}
+		.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
+		
+		/*graphic*/
+		.epic-logo{width:180px;height:180px;margin:-90px 0 0 -90px;background-attachment:inherit;}
+		.epic-graphic img{max-width:180px;height:auto;}
+		
+		/*captions*/
+		.epic-caption span.size_1,.epic-caption span.size_2,.epic-caption span.size_3,.epic-caption span.size_4,.epic-caption span.size_5,.epic-caption span.size_6,
+		.epic-caption h1,.epic-caption h2,.epic-caption h3,.epic-caption h4,.epic-caption h5,.epic-caption h6,
+		.epic-caption h1 span,.epic-caption h2 span,.epic-caption h3 span,.epic-caption h4 span,.epic-caption h5 span,.epic-caption h6 span {font-size:14px; line-height:14px;border:none;}
+		.epic-caption span, .epic-caption div, .epic-caption a span{background:none !important;color:#fff !important;width:100% !important;padding:0;margin:0; border:none !important;}
+		.epic-caption a, .epic-caption a:hover{font-size: inherit;background:none !important;color:#fff !important;}
+		.epic-caption.topLeft,.epic-caption.topRight,.epic-caption.bottomLeft,.epic-caption.bottomRight{top:auto;left:auto;bottom:60px;right:auto; text-align:center; float:none;}
+		.epic-caption{position:absolute;overflow:hidden;background:#000;/*ie8 fallback*/background:rgba(0,0,0,0.8); bottom:60px; padding:20px 0 !important; height:auto;width:100% !important;border:none !important;}
+		
+		/*for graphic content only - theme specific*/
+		.epic-caption.epic-logo{background:none !important;}
+
+
+	}
+		
+	

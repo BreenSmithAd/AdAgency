@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/*------------------------------------------------------
+
+	Theme Name: UDTHEMES FOUNDRY THEME RETRO/GRUNGE
+	Type: Layout css
+	Author: UDTHEMES / unlimitDesign
+	Author URI: http://themeforest.net/user/udfrance
+	Description: Theme options panel for WP 3.3 +
+	Copyright UDTHEMES / UnlimitDesign 2012
+
+
+/*------------------------------------------------------
+
+	CSS TOB:
+
+	1. Commons
+	2. Main Elements
+		i.gobal wrapper
+		ii.sidebar +content
+	3. Links
+	4. Typography
+	5. Standard Elements
+
+---------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------
+	1.COMMONS
+--------------------------------------------------------*/
+
+	#fp-wrapper {-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px;background:#f5f5f5;}
+	#sidebar, #sidebar #inner,#sidebar #logo, #sidebar #logo #logo-texture, #sidebar #logo #logo-texture #logo-overlay  {border-top-left-radius:5px;/*chrome,opera,safari border fix*/}
+	#sidebar,#sidebar #inner{border-bottom-left-radius:5px;/*chrome,opera,safari border fix*/ }
+
+/*--------------------------------------------------------
+	2.MAIN ELEMENTS/SKELETON
+--------------------------------------------------------*/
+
+	/*----------------------------
+	i.-- global wrapper
+	-----------------------------*/
+
+	#fp-wrapper{background:#f5f5f5;}
+
+	/*----------------------------
+	ii.-- sidebar
+	-----------------------------*/
+
+	#sidebar{background-color:#333333;}
+	#sidebar #inner{background:url(../images/shadow_vertical.png) top right repeat-y;}
+
+
+		/* logo area
+		----------------------------------*/
+
+		#sidebar #logo{background-color:#333333;border-bottom:1px solid #0a0a0a;}
+
+
+		/* section menu
+		----------------------------------*/
+
+		#navContainer{border-top:1px solid #5c5c5c !important;}
+		#nav li:first-child{border-top:none;}
+		#nav li:last-child{border-bottom:none;}
+		#nav li {background:none;border-bottom:1px solid #0a0a0a;border-top:1px solid #5c5c5c;}
+		#nav li.active {background:#f64233;color:#fff;}
+		#nav li.active a:hover{background:#f64233;color:#fff;}
+		#nav li.active .foundry_icon{background-position:0 -20px;}
+		#nav li a{font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#eeeeee; text-decoration:none;line-height:40px;}
+		#nav li a:hover{text-decoration:none;color:#ffffff;background:#444444;}
+		#nav li a:hover .foundry_icon{text-decoration:underline;color:#fff; background-position:0 -20px;}
+
+		/*icons*/
+		.foundry_icon-default-icon{background:url(../images/icons/default.png) no-repeat;}
+		.foundry_icon-welcome{background:url(../images/icons/welcome.png) no-repeat;}
+		.foundry_icon-general{background:url(../images/icons/general.png) no-repeat;}
+		.foundry_icon-logos{background:url(../images/icons/logos.png) no-repeat;}
+		.foundry_icon-colors{background:url(../images/icons/colors.png) no-repeat;}
+		.foundry_icon-fonts{background:url(../images/icons/fonts.png) no-repeat;}
+		.foundry_icon-sliders{background:url(../images/icons/sliders.png) no-repeat;}
+		.foundry_icon-css_editor{background:url(../images/icons/css_editor.png) no-repeat;}
+		.foundry_icon-appearance{background: url(../images/icons/apperance.png) no-repeat;}
+		.foundry_icon-featured{background: url(../images/icons/featured.png) no-repeat;}
+		.foundry_icon-pagination{background: url(../images/icons/pagination.png) no-repeat;}
+		.foundry_icon-shortcode{background:url(../images/icons/shortcode.png) no-repeat;}
+
+
+
+
+		/*#nav li a.first {border-top:none;}*/
+		/*#nav li a.last {border-bottom:none;}*/
+
+
+
+	/*----------------------------
+	iii.-- header
+	-----------------------------*/
+
+	#header{background:#eeeeee url(../images/foundry-shadow-vertical.png) repeat-y;border-left: 1px solid #fff;border-bottom:1px solid #cbcbcb;}
+	#header #header-inner{background: url(../images/foundry-shadow-horizontal.png) bottom left repeat-x;/* url(../images/patterns/sidebar_logo_pattern_overlay.png) repeat;*/}
+
+
+		/* dashboard icons
+		----------------------------------*/
+
+		#dashboard-icons{background:#333333; font-weight:bold; line-height:26px;-webkit-border-radius: 20px;-moz-border-radius: 20px; border-radius: 20px;}
+		#dashboard-icons .link_holder{width:auto;border-right:1px dotted #666666;}
+		#dashboard-icons .link_holder a{color:#ffffff;}
+		#dashboard-icons .link_holder a:hover{color:#666666; text-decoration:none;}
+		#dashboard-icons .link_holder.last{border:none;}
+
+
+		/* message screen
+		----------------------------------*/
+
+		#dashboard-message{font-family: Arial, Helvetica, sans-serif;color:#5b4e2f; font-size:12px;line-height:16px;}
+
+
+	/*----------------------------
+	vi.-- content
+	-----------------------------*/
+
+	#content-wrapper{background: #F5F5F5;border-left: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF;}
+
+
+		/* tab component containers
+		----------------------------------*/
+		/*ref jquery-ui-1.8.16.custom*/
+
+
+		/* tab interaction states
+		----------------------------------*/
+
+		/*tab default state*/
+		.ui-tabs .ui-tabs-panel {background:none;}
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: #ffffff url(../images/ui-bg_foundry-tab.png) repeat;font-weight: normal;}
+		.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {color: #666666;text-decoration: none;}
+
+		/*tab active state*/
+		.content .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {background:#f5f5f5; border: medium none;box-shadow:0 -2px 3px rgba(0, 0, 0, 0.1);color: #333333;font-weight: bold;border-left:1px solid #cbcbcb;border-top:1px solid #cbcbcb;border-left:1px solid #cbcbcb;}
+		.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {color: #f64233 !important; text-decoration: none;}
+
+
+	/*----------------------------
+	vii.-- modules
+	-----------------------------*/
+
+		/*module container display*/
+		#fp-wrapper .module{border-top:1px solid #fff;border-bottom:2px solid #DDD;}
+		#fp-wrapper .group .module {background-image:none;}
+		#fp-wrapper .module.group {-moz-border-bottom-colors: none;-moz-border-left-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none;border-color: #FFFFFF #DDDDDD #DDDDDD;border-image: none;border-style: solid;border-width: 1px;margin: 1px 0 3px;width: 537px;}
+		/*#fp-wrapper .module-odd{}*/
+		#fp-wrapper .module-even{background: #EFEFEF;}
+		#fp-wrapper .module:first-child{border-top:none;}
+		#fp-wrapper > .module:last-child{ -moz-border-bottom-colors: none;-moz-border-left-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none;border-color: -moz-use-text-color #DDDDDD #DDDDDD;border-image: none;border-right: 1px solid #DDDDDD;border-left:1px solid #DDDDDD;border-style: none solid solid;border-bottom: 1px solid #DDDDDD;border-width: 1px;margin-bottom: 3px;width: 537px;}
+		#fp-wrapper .module .module{ border-bottom: 1px solid #DDDDDD;margin-top: 3px;width: 540px;}
+		#fp-wrapper .module .module:last-child{border-bottom:none;}
+
+		 /*module ui general styling
+		 -----------------------------------*/
+
+		#fp-wrapper textarea, #fp-wrapper input[type="text"], #fp-wrapper input[type="password"], #fp-wrapper input[type="file"], #fp-wrapper input[type="button"], #fp-wrapper input[type="reset"], #fp-wrapper input[type="email"], #fp-wrapper input[type="number"], #fp-wrapper input[type="search"],#fp-wrapper input[type="tel"], #fp-wrapper input[type="url"], #fp-wrapper select {-webkit-border-radius: 0px;-moz-border-radius: 0px; border-radius: 0px;border:1px solid #dddddd;color: #999;}
+
+		#fp-wrapper textarea:focus, #fp-wrapper input[type="text"]:focus, #fp-wrapper input[type="password"]:focus, #fp-wrapper input[type="file"]:focus, #fp-wrapper input[type="button"]:focus, #fp-wrapper input[type="reset"]:focus, #fp-wrapper input[type="email"]:focus, #fp-wrapper input[type="number"]:focus, #fp-wrapper input[type="search"]:focus,#fp-wrapper input[type="tel"]:focus, #fp-wrapper input[type="url"]:focus, #fp-wrapper select:focus{border:1px solid #cccccc;color:#666666;}
+
+		#fp-wrapper input[type="file"],#fp-wrapper input[type="reset"]{margin-left:-9999px;}/*hide type file*/
+
+		/*module individual styling*/
+
+			/* fields
+			----------------------------------*/
+
+			#fp-wrapper input[type="text"]{background: #fff url(../images/input-shadow.png) repeat-x;}
+			#fp-wrapper input[type="text"].hexVal{border-left:none; border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;border-right:1px solid #dddddd;}
+			#fp-wrapper input[type="text"].hexVal:focus{border-left:none; border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;border-right:1px solid #cccccc;color:#666666;}
+
+			/* txt areas
+			----------------------------------*/
+
+			#fp-wrapper textarea{background: #fff url(../images/input-shadow.png) repeat-x;}
+
+			/* comboboxes
+			----------------------------------*/
+
+			/*#fp-wrapper  select{}*/
+
+
+			/* radio buttons
+			----------------------------------*/
+
+			/*#fp-wrapper .module-radioButton{}*/
+
+
+			/*buttons
+			----------------------------------*/
+
+			#fp-wrapper input[type="submit"], #fp-wrapper input[type="button"]{background: url(../images/ui-bg_foudry.png) repeat-x; border:1px solid #dddddd; color:#999999; font-weight:bold;}
+
+			/* button sizes */
+			/*ref to style.css*/
+
+			/*button effects */
+			#fp-wrapper  input[type="submit"].shadow, #fp-wrapper input[type="button"].shadow{/*-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);box-shadow: 0 1px 3px rgba(0,0,0,0.5);border-bottom: 1px solid rgba(0,0,0,0.25);*/}
+			#fp-wrapper input[type="submit"].rcorners, #fp-wrapper input[type="button"].rorners{-webkit-border-radius: 0px;-moz-border-radius: 0px; border-radius: 0px;}
+			#fp-wrapper input[type="submit"].txtshadow, #fp-wrapper input[type="button"].txtshadow{text-shadow:0px 1px 1px #000;}
+			#fp-wrapper input[type="submit"].txtemboss, #fp-wrapper input[type="button"].txtemboss{text-shadow:0px -1px 0px #666;}
+
+
+			/*button states*/
+			#fp-wrapper input[type="submit"].saveProgress, #fp-wrapper input[type="submit"].saveSuccess, #fp-wrapper input[type="submit"].saveError{color:#fff !important;}
+
+			/*saving*/
+			#fp-wrapper input[type="submit"].small.saveProgress, #fp-wrapper input[type="button"].small.saveProgress {background: #f64233 url(../images/button_loader.gif) center center  no-repeat;}
+			#fp-wrapper input[type="submit"].large.saveProgress, #fp-wrapper input[type="button"].large.saveProgress {background: #f64233 url(../images/button_loader.gif) 15px center  no-repeat; color: white;}
+
+			/*success*/
+			#fp-wrapper input[type="submit"].small.saveSuccess, #fp-wrapper input[type="button"].small.saveSuccess {background: #90ac0d  url(../images/icons/success.png) 8px center no-repeat;color:#ffffff;}
+			#fp-wrapper input[type="submit"].small.saveSuccess:hover, #fp-wrapper input[type="button"].small.saveSuccess:hover {background-color: #90ac0d;color:#ffffff;}
+			#fp-wrapper input[type="submit"].large.saveSuccess, #fp-wrapper input[type="button"].large.saveSuccess{background: #90ac0d  url(../images/icons/success.png) 15px center no-repeat;color:#ffffff;}
+			#fp-wrapper input[type="submit"].large.saveSuccess:hover, #fp-wrapper input[type="button"].large.saveSuccess:hover  {background-color: #90ac0d;}
+
+			/*error*/
+			#fp-wrapper input[type="submit"].small.saveError, #fp-wrapper input[type="button"].small.saveError{ background: #ac0000  url(../images/icons/error.png) 8px center no-repeat;}
+			#fp-wrapper input[type="submit"].small.saveError:hover, #fp-wrapper input[type="button"].small.saveError:hover {background-color: #ac0000;}
+			#fp-wrapper input[type="submit"].large.saveError, #fp-wrapper input[type="button"].large.saveError { background: #ac0000  url(../images/icons/error.png) 15px center no-repeat;}
+			#fp-wrapper input[type="submit"].large.saveError:hover, #fp-wrapper input[type="button"].large.saveError:hover {background-color: #ac0000;}
+
+			/*inactive*/
+			#fp-wrapper input[type="submit"].saveDisabled, #fp-wrapper input[type="button"].saveDisabled {background: url(../images/ui-bg_foudry-disabled.png)repeat;color:#cccccc !important;}
+			#fp-wrapper input[type="submit"].saveDisabled:hover, #fp-wrapper input[type="button"].saveDisabled:hover {color:#cccccc !important;}
+			#fp-wrapper input[type="submit"]:hover, #fp-wrapper input[type="button"]:hover {color:#666666 !important;}
+
+			/*toggle buttons
+			----------------------------------*/
+
+			.toggleCheckContainer {cursor: pointer; border:1px solid #dddddd;}
+			.toggleCheckContainer input {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity: 0;}
+			.toggleCheckContainer label {font-size: 14px;line-height: 25px;font-weight: bold;font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;cursor: pointer;}
+			/*.toggleCheckContainer, .toggleCheckContainer label {}*/
+			.toggleCheckDisabled {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity: 0.5; }
+			label.toggleCheckLabelOn {color: white;background: url(../images/on.png) no-repeat;/*text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6)*/}
+			/*label.toggleCheckLabelOn span { }*/
+			label.toggleCheckLabelOff {color: #8b8b8b;background: url(../images/off.png) no-repeat right 0;/* text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);*/text-align: right; }
+		    /*label.toggleCheckLabelOff span {}*/
+			.toggleCheckHandle {background: url(../images/slider_left.png) no-repeat;}
+			.toggleCheckHandleRight {background: url(../images/slider_right.png) no-repeat right 0; }
+			.toggleCheckHandleCenter {background: url(../images/slider_center.png) no-repeat; }
+
+			/* foundry_buttonWithIcon, icons with buttons
+			----------------------------------*/
+
+			#fp-wrapper .foundry_buttonWithIcon {background: url(../images/ui-bg_foudry.png) repeat-x; border:1px solid #dddddd; color:#999999; font-weight:bold;width: 220px; font-size: 14px; padding: 0px 15px; line-height: 36px;height: 35px; cursor: pointer; }
+			#fp-wrapper .foundry_buttonWithIcon_label {vertical-align: top;margin-left: 15px; color: #999999; cursor: pointer;}
+
+				/*Icons (for foundry_buttonWithIcon, icons with buttons )
+				----------------------------------*/
+
+				/* Foundry Box - added on 7th September 2012 */
+				#fp-wrapper .buttonIcon_foundryBox {margin-top: 5px; background: url(../images/icons/foundry-box-icon.png) 0px 0px no-repeat; height: 27px; width: 26px;display: inline-block;margin-left: -4px;}
+				#fp-wrapper .foundry_buttonWithIcon:hover > .buttonIcon_foundryBox { background-position: 0px -27px; }
+				#fp-wrapper .foundry_buttonWithIcon:hover > .foundry_buttonWithIcon_label { color: #666666; }
+
+			/* help message
+			----------------------------------*/
+
+			#fp-wrapper .settingItemMessage, #fp-wrapper .groupInfoMessage, #fp-wrapper .labelToggleButton{color:#999999;font-size:12px; font-style:italic;margin-bottom: 25px;}
+			#fp-wrapper .labelToggleButton{width:395px;float:left;}
+
+			/*upload messge
+			----------------------------------*/
+
+			#fp-wrapper .upload_thumbnail_message {color:#777777;font-size:12px; font-weight:bold;}
+
+
+			/* progress message
+			----------------------------------*/
+
+			#fp-wrapper .progressMessage{border-top:1px solid #ffffff;}
+
+
+			/* tooltip
+			----------------------------------*/
+			.titleContainer{}
+			.titleContainer h1{}
+			.info{background:url(../images/icons/i.png) 0 0 no-repeat;}
+			.info:hover{background:url(../images/icons/i.png) 0 -15px no-repeat;}
+
+			.tooltip{font-size:11px; line-height:13px;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; border:1px solid #000;color:#ddd;
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 1%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.7)), color-stop(1%,rgba(0,0,0,0.7)), color-stop(99%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 1%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 1%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 1%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+			background: linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 1%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+}
+
+			.tooltip .example{color:#fff; font-style: italic;}
+
+
+			/*to top
+			----------------------------------*/
+
+			#toTop{background:url(../images/icons/to_top.png) 0 0 no-repeat;}
+			#toTop:hover {background-position: 0 -31px;}
+
+
+			/*copyright
+			----------------------------------*/
+
+		     .foundry-copyright{float:left;}
+			 .foundry-copyright a{text-decoration:none;color: #f64233;}
+			 .foundry-copyright a:hover{text-decoration:underline;color: #f64233;}
+
+/*--------------------------------------------------------
+	3.LINKS
+--------------------------------------------------------*/
+
+	#fp-wrapper a{text-decoration:none;}
+	#fp-wrapper a.link{text-decoration:none;color: #f64233;}
+	#fp-wrapper a.link:hover{text-decoration:underline;}
+	#fp-wrapper a.foundry_systemInfo_click{background:#dddddd; font-weight:bold;-webkit-border-radius: 20px;-moz-border-radius: 20px; border-radius: 20px; color:#999999;}
+	#fp-wrapper a.foundry_systemInfo_click:hover {background: #f64233;color:#ffffff;}
+
+
+/*--------------------------------------------------------
+	4.TYPOGRAPHY
+--------------------------------------------------------*/
+
+
+	#fp-wrapper h1,#fp-wrapper h2, #fp-wrapper h3, #fp-wrapper h4, #fp-wrapper h5, #fp-wrapper h6, #fp-wrapper p, #fp-wrapper .module ol, #fp-wrapper .module ul, #fp-wrapper .module ol li a,  #fp-wrapper .module ul li a { font-family:Arial, Helvetica, sans-serif;color:#666666; font-weight:normal;}
+	#fp-wrapper .module ol li a:hover,  #fp-wrapper .module ul li a:hover {color: #f64233 !important;}
+	#fp-wrapper h1{font-size:16px; font-weight:bold;}
+	#fp-wrapper .module .module h1{font-size:14px; font-weight:bold;color:#999999;}
+	#fp-wrapper	h2{font-size:14px;}
+	#fp-wrapper h3{font-size:13px;}
+	#fp-wrapper h4{font-size:12px;}
+	#fp-wrapper h5{font-size:11px;}
+	#fp-wrapper h6{font-size:10px;}
+	#fp-wrapper p{font-size:12px;line-height:16px;}
+
+
+/*--------------------------------------------------------
+		5. STANDARD ELEMENTS
+--------------------------------------------------------*/
+
+
+	/*----------------------------
+	i.--standard highlights
+	-----------------------------*/
+
+	#fp-wrapper .highlight{background:#000;color:#fff;}
+	#fp-wrapper .underline{border-bottom:1px solid #666;}
+
+		/*highlights effects*/
+		#fp-wrapper .highlight.italic{font-style:italic;}
+		#fp-wrapper .highlight.bold{font-weight: bold;}
+
+		/*highlights colors*/
+		#fp-wrapper .highlight.theme {background-color: #f64233;}
+		#fp-wrapper .highlight.green {background-color: #90ac0d;}
+
+		/*underline type*/
+		#fp-wrapper .underline.solidLine{border-bottom-style:solid;}
+		#fp-wrapper .underline.dottedLine{border-bottom-style:dotted}
+		#fp-wrapper .underline.dashedLine{border-bottom-style:dashed;}
+
+		/*underline colors*/
+		#fp-wrapper .underline.theme {border-bottom-color: #f64233;}
+		#fp-wrapper .underline.green {border-bottom-color: #90ac0d;}
+
+
+
+
+
+
+
+

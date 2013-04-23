@@ -1,0 +1,146 @@
+/* wpadmin side menu icons 
+	wpadmin_sideMenu.css
+*/
+
+/*dashboard*/
+.icon16.icon-post, #adminmenu li#menu-dashboard div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -60px -33px !important;
+}
+
+.icon16.icon-post, #adminmenu li#menu-dashboard.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -60px 0px !important;
+}
+
+/*foundry*/
+
+#adminmenu li#toplevel_page_udff_admin div.wp-menu-image a img {
+	display:none; /*hide img*/
+}
+#adminmenu li#toplevel_page_udff_admin div.wp-menu-image{
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -455px -33px !important;
+}
+#adminmenu li#toplevel_page_udff_admin.wp-has-current-submenu div.wp-menu-image{
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -455px 0px !important;
+}
+
+
+/* posts */
+.icon16.icon-post, #adminmenu li#menu-posts div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -271px -33px !important;
+}
+
+.icon16.icon-post, #adminmenu  li#menu-posts.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -271px 0px !important;
+}
+
+
+/* Pages */
+
+.icon16.icon-page, #adminmenu li#menu-pages div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -150px -33px !important;
+}
+.icon16.icon-page, #adminmenu li#menu-pages.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -150px 0px !important;
+}
+
+/* Portfolio */
+
+#adminmenu li#menu-posts-portfolio_archive div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -425px -33px !important;
+}
+#adminmenu li#menu-posts-portfolio_archive.wp-has-current-submenu  div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -425px 0px !important;
+}
+
+
+/* Supplement Pages */
+
+#adminmenu li#menu-posts-supplement  div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -394px -33px !important;
+}
+#adminmenu li#menu-posts-supplement.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -394px 0px !important;
+}
+
+
+
+/* separator */
+
+/* comments */
+.icon16.icon-comments, #adminmenu li#menu-comments div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -30px -33px !important;
+}
+
+.icon16.icon-comments, #adminmenu li#menu-comments.current div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -30px 0px !important;
+}
+
+
+
+
+/* Media */
+
+.icon16.icon-media, #adminmenu li#menu-media div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -120px -33px !important;
+}
+
+.icon16.icon-media, #adminmenu li#menu-media.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -120px  0px !important;
+}
+
+/* links */
+
+.icon16.icon-links, #adminmenu li#menu-links div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -90px -33px !important;
+}
+.icon16.icon-links, #adminmenu li#menu-links.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -90px 0px !important;
+}
+
+
+/* Users */
+
+.icon16.icon-users, #adminmenu li#menu-users div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -300px -33px !important;
+}
+.icon16.icon-users, #adminmenu li#menu-users.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -300px 0px !important;
+}
+
+/* Separator */
+
+/* Appearance */
+
+.icon16.icon-appearance, #adminmenu li#menu-appearance div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll 0 -33px !important;
+}
+.icon16.icon-appearance, #adminmenu li#menu-appearance.current div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll 0 0px !important;
+}
+
+/* Plugins */
+
+.icon16.icon-plugins, #adminmenu li#menu-plugins div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -180px -33px !important;
+}
+.icon16.icon-plugins, #adminmenu li#menu-plugins.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -180px 0px !important;
+}
+
+/* Tools */
+
+.icon16.icon-tools, #adminmenu li#menu-tools div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -210px -33px !important;
+}
+.icon16.icon-tools, #adminmenu li#menu-tools.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -210px 0px !important;
+}
+
+/* Settings */
+
+.icon16.icon-settings, #adminmenu li#menu-settings div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -240px -33px !important;
+}
+.icon16.icon-settings, #adminmenu li#menu-settings.wp-has-current-submenu div.wp-menu-image {
+	background: transparent url('../images/icons/wp_foundry.png') no-repeat scroll -240px 0px !important;
+}
